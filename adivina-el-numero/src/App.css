@@ -1,0 +1,148 @@
+
+.game-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.game-card {
+  background: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+  width: 100%;
+  max-width: 28rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.game-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.game-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.game-subtitle {
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+.attempts-section {
+  margin-bottom: 1.5rem;
+}
+
+.attempts-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.attempts-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.progress-bar {
+  width: 8rem;
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  height: 0.5rem;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background-color: #3b82f6;
+  height: 100%;
+  border-radius: 9999px;
+  transition: width 0.3s ease-in-out;
+}
+
+.game-actions {
+  margin-bottom: 1.5rem;
+}
+
+.history-section {
+  margin-top: 1.5rem;
+}
+
+.history-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.history-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.history-item {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.history-item.correct {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.history-item.low {
+  background-color: #fef2f2;
+  color: #991b1b;
+}
+
+.history-item.high {
+  background-color: #fefce8;
+  color: #a16207;
+}
+
+.game-footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.game-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
